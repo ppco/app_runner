@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app_runner:
+    build: .
+    volumes:
+      - ./app:/go/app
+    ports:
+      - "8080:8080"
+    tty: true
